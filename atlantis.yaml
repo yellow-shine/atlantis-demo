@@ -1,0 +1,15 @@
+version: 3
+automerge: false
+projects:
+  - name: local-demo
+    dir: .
+    workspace: default
+    autoplan:
+      enabled: true
+      when_modified:
+        - "*.tf"
+        - "*.tfvars"
+        - "atlantis.yaml"
+    apply_requirements:
+      - approved
+      - mergeable
