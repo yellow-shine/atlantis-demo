@@ -12,3 +12,12 @@ projects:
         - "atlantis.yaml"
     apply_requirements:
       - mergeable
+  - name: workspace
+    dir: ./workspace
+    workspace: default
+    autoplan:
+      enabled: true
+      when_modified:
+        - "*.tf"
+    apply_requirements:
+      - mergeable
