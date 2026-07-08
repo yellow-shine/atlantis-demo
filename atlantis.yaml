@@ -11,5 +11,4 @@ projects:
         - "*.tfvars"
         - "atlantis.yaml"
     apply_requirements:
-      - approved
       - mergeable
