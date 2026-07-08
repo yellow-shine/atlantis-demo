@@ -11,7 +11,7 @@ terraform {
 
 variable "message" {
   type    = string
-  default = "Hello from Atlantis PR plan 2"
+  default = "Hello from Atlantis PR plan 4"
 }
 
 resource "local_file" "demo" {
